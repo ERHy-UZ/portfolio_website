@@ -1,33 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/w95fa');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pixelate');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    /* Asegúrate de que sea mayor que el z-index de otros elementos */
+    background: repeating-linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.05) 2px,
+            transparent 2px,
+            transparent 4px);
+    animation: scanlineAnimation 1s linear infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@keyframes scanlineAnimation {
+    0% {
+        transform: translateY(0);
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    100% {
+        transform: translateY(4px);
+    }
 }

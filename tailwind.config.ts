@@ -13,6 +13,21 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        cybergreen: {
+          100: '#C2FBE1',
+          200:'#01c38b'
+        },
+        cyberblue: '#162636',
+        cyberblack: '#181C18'
+      },
+      fontFamily: {
+        w95f4: ['W95FA', 'sans-serif'],
+        inconsolata: ['Inconsolata', 'system-ui'],
+        dosis: ['Dosis', 'sans-serif'],
+        sf_pixelate: ['SF Pixelate', 'sans-serif'],
+        sf_pixelate_shaded: ['SF Pixelate Shaded', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -19,7 +19,8 @@ const config: Config = {
           200:'#01c38b'
         },
         cyberblue: '#162636',
-        cyberblack: '#181C18'
+        cyberblack: '#181C18',
+        cyberwhite: '#DEDCD0'
       },
       fontFamily: {
         w95f4: ['W95FA', 'sans-serif'],

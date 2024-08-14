@@ -24,7 +24,7 @@ export default function ButtonSocial() {
     )
 
     return (
-        <div className='flex justify-center space-x-7 mt-12'>
+        <div className='flex justify-center space-x-7 mt-8'>
             <Button
                 nombre='LinkedIn'
                 icon={<FaLinkedin size={20} />}

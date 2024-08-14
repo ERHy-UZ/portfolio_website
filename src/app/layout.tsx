@@ -16,8 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-cyberblack z-10 opacity-60 blur-[0.8px]`}>{children}</body>
-      <div className="scanlines"/>
+      <body className={`${inter.className} bg-cyberblack`}>{children}</body>
     </html>
   );
 }

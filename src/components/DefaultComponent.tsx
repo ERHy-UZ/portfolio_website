@@ -18,8 +18,8 @@ export default function DefaultComponent() {
 
     return (
         <section className='flex flex-col space-y-5 h-[54rem] justify-center items-center'>
-            <Image className='cursor-pointer' src={`/Logo_${LOGO_[toggleState]}.svg`} alt='Logo' width={300} height={300} ref={glitch.ref} onClick={handleChangeWords} />
-            <p className='text-cybergreen-100 text-xl font-w95f4 tracking-widest pointer-events-none'>{TITLE_[toggleState]}</p>
+            <Image className='cursor-pointer h-[150px] w-[150px] lg:h-[300px] lg:w-[300px]' src={`/Logo_${LOGO_[toggleState]}.svg`} alt='Logo' width={300} height={300} ref={glitch.ref} onClick={handleChangeWords} />
+            <p className='text-cybergreen-100 lg:text-xl font-w95f4 tracking-widest pointer-events-none'>{TITLE_[toggleState]}</p>
         </section>
     )
 }

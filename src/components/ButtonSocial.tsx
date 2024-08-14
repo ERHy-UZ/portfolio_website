@@ -28,13 +28,13 @@ export default function ButtonSocial() {
             <Button
                 nombre='LinkedIn'
                 icon={<FaLinkedin size={20} />}
-                colorI='blue'
+                colorI='bg-blue-600'
                 link='https://www.linkedin.com/in/antonio-trejo-moreno/'
             />
             <Button
                 nombre='Github'
                 icon={<FaGithub size={20} />}
-                colorI='purple'
+                colorI='bg-purple-600'
                 link='https://github.com/ERHy-UZ'
             />
         </div>

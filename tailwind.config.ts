@@ -16,9 +16,13 @@ const config: Config = {
       colors: {
         cybergreen: {
           100: '#C2FBE1',
-          200:'#01c38b'
+          200: '#01c38b'
         },
-        cyberblue: '#162636',
+        cyberblue: {
+          100: '#132D46',
+          200: '#162636',
+          300:'#191E29'
+        },
         cyberblack: '#181C18',
         cyberwhite: '#DEDCD0'
       },
@@ -31,6 +35,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };
 export default config;

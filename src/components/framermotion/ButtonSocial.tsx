@@ -17,7 +17,7 @@ export default function ButtonSocial() {
         <motion.a 
             whileHover={{scale: 1.04}}
             whileTap={{scale: 0.93}}
-            href={link} className={`flex justify-evenly items-center w-[100px] h-9 lg:w-[150px] lg:h-12 ${colorI} hover:brightness-[0.7] text-white rounded-sm`}>
+            href={link} className={`flex relative justify-evenly items-center w-[100px] h-9 lg:w-[150px] lg:h-12 ${colorI} hover:brightness-[0.7] text-white rounded-sm`}>
             {icon}
             <p className='font-sf_pixelate text-xs lg:text-xl tracking-wide'>{nombre}</p>
         </motion.a>

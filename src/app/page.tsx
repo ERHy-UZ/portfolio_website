@@ -37,7 +37,7 @@ export default function Home() {
             </div>
             <ButtonSocial />
           </header>
-          <div className='space-y-8'>
+          <div className='space-y-4 lg:space-y-8'>
             <Section title='Sobre mí' content={<AboutMe />} />
             <Section title='Experiencia' content={<></>} />
             <Section title='Tecnologías' content={<Tecnologias />} />

@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Experience from "@/components/Experience";
 import ButtonSocial from "@/components/framermotion/ButtonSocial";
 import Section from "@/components/Section";
 import Tecnologias from "@/components/Tecnologias";
@@ -39,7 +40,7 @@ export default function Home() {
           </header>
           <div className='space-y-4 lg:space-y-8'>
             <Section title='Sobre mí' content={<AboutMe />} />
-            <Section title='Experiencia' content={<></>} />
+            <Section title='Experiencia' content={<Experience />} />
             <Section title='Tecnologías' content={<Tecnologias />} />
             <Section title='Proyectos' content={<></>} />
             <Section title='Información adicional' content={<></>} />

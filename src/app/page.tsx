@@ -1,6 +1,7 @@
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
 import ButtonSocial from "@/components/framermotion/ButtonSocial";
+import Projects from "@/components/Projects";
 import Section from "@/components/Section";
 import Tecnologias from "@/components/Tecnologias";
 import Image from "next/image";
@@ -42,7 +43,7 @@ export default function Home() {
             <Section title='Sobre mí' content={<AboutMe />} />
             <Section title='Experiencia' content={<Experience />} />
             <Section title='Tecnologías' content={<Tecnologias />} />
-            <Section title='Proyectos' content={<></>} />
+            <Section title='Proyectos' content={<Projects />} />
             <Section title='Información adicional' content={<></>} />
           </div>
         </section>

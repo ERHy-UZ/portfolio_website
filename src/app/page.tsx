@@ -17,16 +17,16 @@ export default function Home() {
           <Link href={'/gimikode'} className='h-7 w-7 lg:h-10 lg:w-10'>
             <Image className='h-7 w-7 lg:h-10 lg:w-10' draggable='false' src={`/Logo_Gimikode.svg`} alt='Logo' width={30} height={30} priority />
           </Link>
-          <section className='flex w-[50%] justify-end items-center mr-5 space-x-1 lg:space-x-2'>
+          <nav className='flex w-[50%] justify-end items-center mr-5 space-x-1 lg:space-x-2'>
             <div className='flex relative justify-center items-center px-4 lg:px-7 hover:bg-cyberblue-100 cursor-pointer before:absolute before:h-[150%] before:w-[110%] before:hover:bg-cyberblue-100 before:blur-sm before:-z-10'>
-              <a href='' className='uppercase text-cyberwhite text-xs lg:text-lg'>Inicio_</a>
+              <a href='#inicio' className='uppercase text-cyberwhite text-xs lg:text-lg'>Inicio_</a>
             </div>
             <div className='flex relative justify-center items-center px-4 lg:px-7 hover:bg-cyberblue-100 cursor-pointer before:absolute before:h-[150%] before:w-[110%] before:hover:bg-cyberblue-100 before:blur-sm before:-z-10'>
-              <a className='uppercase text-cyberwhite text-xs lg:text-lg'>Proyectos_</a>
+              <a href='#proyectos' className='uppercase text-cyberwhite text-xs lg:text-lg'>Proyectos_</a>
             </div>
-          </section>
+          </nav>
         </header>
-        <section className='blur-[0.5px] lg:blur-[0.7px] pb-16 pt-20'>
+        <section id='inicio' className='blur-[0.5px] lg:blur-[0.7px] pb-16 pt-20'>
           <header className='mt-16 flex flex-col justify-center items-center w-full mb-14 lg:mb-20'>
             <h1 className='uppercase text-cybergreen-100 text-lg lg:text-2xl font-inconsolata font-bold tracking-widest'>JOSÉ ANTONIO</h1>
             <section className='h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] opacity-60 mt-3 shadow-md shadow-cybergreen-100 relative'>

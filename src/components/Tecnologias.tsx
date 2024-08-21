@@ -20,6 +20,7 @@ export default function Tecnologias() {
 
         return (
             <motion.section
+                onClick={() => console.log('hola')}
                 drag
                 dragConstraints={constraintsRef}
                 className={`flex justify-center items-center ${pos} cursor-grab`}>

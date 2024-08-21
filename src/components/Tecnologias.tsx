@@ -4,8 +4,8 @@ import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { CgFramer } from "react-icons/cg";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
-import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { ReactNode, useRef } from "react";
+import { easeInOut, motion } from "framer-motion";
 
 type RecuadroTechProps = {
     icono: ReactNode
@@ -14,21 +14,24 @@ type RecuadroTechProps = {
 }
 
 export default function Tecnologias() {
-
+    const constraintsRef = useRef(null)
 
     const RecuadroTech = ({ icono, color, pos }: RecuadroTechProps) => {
+
         return (
-            <motion.div
-                className={`flex justify-center items-center ${pos} cursor-pointer`}>
-                <p className={`text-4xl lg:text-7xl ${color}`}>{icono}</p>
-                <p></p>
-            </motion.div>
+            <motion.section
+                drag
+                dragConstraints={constraintsRef}
+                className={`flex justify-center items-center ${pos} cursor-grab`}>
+                <h2 className={`text-4xl lg:text-7xl ${color}`}>{icono}</h2>
+            </motion.section>
         )
     }
 
     return (
         <section
-            className='z-10 w-full mx-auto bg-gradient-to-b from-cyberblue-200 via-cyberblue-300 border-t-2 border-cyan-900'>
+            ref={constraintsRef}
+            className='z-10 w-full mx-auto bg-gradient-to-b from-cyberblue-200 via-cyberblue-300 border-t-2 border-cyan-900 overflow-hidden'>
             <div className='grid grid-cols-6 gap-y-3 lg:gap-y-5 gap-x-2 lg:gap-x-4 w-[80%] lg:w-[50%] mx-auto py-5 lg:py-10'>
                 <RecuadroTech icono={<FaHtml5 />} color='text-orange-500' pos='col-start-2' />
                 <RecuadroTech icono={<FaCss3Alt />} color='text-blue-700' pos='col-start-5' />

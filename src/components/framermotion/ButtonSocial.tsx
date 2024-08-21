@@ -24,7 +24,7 @@ export default function ButtonSocial() {
     )
 
     return (
-        <div className='flex justify-center space-x-7 mt-8'>
+        <footer className='flex justify-center space-x-7 mt-8'>
             <Button
                 nombre='LinkedIn'
                 icon={<FaLinkedin size={20} />}
@@ -37,7 +37,7 @@ export default function ButtonSocial() {
                 colorI='bg-purple-600'
                 link='https://github.com/ERHy-UZ'
             />
-        </div>
+        </footer>
 
     )
 }

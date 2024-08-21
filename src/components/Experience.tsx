@@ -25,8 +25,8 @@ export default function Experience() {
                 }}
                 className="absolute flex items-center justify-center w-4 lg:w-6 h-4 lg:h-6 bg-blue-100 -start-2 lg:-start-3 ring-8 dark:ring-cybergreen-100/30 dark:bg-cybergreen-200" />
             <div className='ml-3 mb-3 lg:mb-4'>
-                <h3 className="flex items-center mb-1 text-base lg:text-2xl font-inconsolata tracking-wider font-semibold text-cybergreen-200 leading-4">{title}<span className={`${isRecent ? 'block' : 'hidden'} uppercase bg-orange-300 text-[0.7rem] lg:text-sm font-dosis tracking-widest font-bold me-2 px-2.5 py-0.5 rounded text-cyberblack ms-3`}>Reciente</span>
-                </h3>
+                <h2 className="flex items-center mb-1 text-base lg:text-2xl font-inconsolata tracking-wider font-semibold text-cybergreen-200 leading-4">{title}<span className={`${isRecent ? 'block' : 'hidden'} uppercase bg-orange-300 text-[0.7rem] lg:text-sm font-dosis tracking-widest font-bold me-2 px-2.5 py-0.5 rounded text-cyberblack ms-3`}>Reciente</span>
+                </h2>
                 <time className="block mb-3 lg:mb-2 text-[0.6rem] lg:text-sm tracking-widest leading-none text-cybergreen-100 lg:-translate-y-1">{time}</time>
                 <p className="text-sm lg:text-lg leading-5 font-inconsolata font-normal text-cyberwhite">{content}</p>
                 {aditional}
@@ -35,7 +35,7 @@ export default function Experience() {
     )
 
     return (
-        <ol className="relative border-s border-cybergreen-100 mt-6 w-[96%] mx-auto">
+        <ul className="relative border-s border-cybergreen-100 mt-6 w-[96%] mx-auto">
             {<>
                 <TimelineSegment
                     title='Desarrollador Front-End.'
@@ -50,6 +50,6 @@ export default function Experience() {
                     isRecent={false}
                 />
             </>}
-        </ol>
+        </ul>
     )
 }

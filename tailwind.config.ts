@@ -16,7 +16,8 @@ const config: Config = {
       colors: {
         cybergreen: {
           100: '#C2FBE1',
-          200: '#01c38b'
+          200: '#01c38b',
+          300: '#1F5B65'
         },
         cyberblue: {
           100: '#132D46',
@@ -24,7 +25,9 @@ const config: Config = {
           300:'#191E29'
         },
         cyberblack: '#181C18',
-        cyberwhite: '#DEDCD0'
+        cyberwhite: '#DEDCD0',
+        cybergray: '#2B2A25',
+        cyberorange: '#F5471D'
       },
       fontFamily: {
         w95f4: ['W95FA', 'sans-serif'],

@@ -4,7 +4,7 @@ import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { CgFramer } from "react-icons/cg";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
-import { ReactNode, useRef } from "react";
+import { ReactNode, useRef, useState } from "react";
 import { easeInOut, motion } from "framer-motion";
 
 type RecuadroTechProps = {
@@ -18,12 +18,23 @@ export default function Tecnologias() {
 
     const RecuadroTech = ({ icono, color, pos }: RecuadroTechProps) => {
 
+        const [isGrabbing, setGrab] = useState(false)
+
+        const handleGrab = () => {
+            setGrab(true)
+        }
+
+        const handleRelease = () => {
+            setGrab(false)
+        }
+
         return (
             <motion.section
-                onClick={() => console.log('hola')}
+                onDrag={handleGrab}
+                onDragEnd={handleRelease}
                 drag
                 dragConstraints={constraintsRef}
-                className={`flex justify-center items-center ${pos} cursor-grab`}>
+                className={`flex justify-center items-center ${pos}  ${isGrabbing ? 'cursor-grabbing' : 'cursor-grab'}`}>
                 <h2 className={`text-4xl lg:text-7xl ${color}`}>{icono}</h2>
             </motion.section>
         )

@@ -5,7 +5,7 @@ import { CgFramer } from "react-icons/cg";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { ReactNode, useRef, useState } from "react";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 type RecuadroTechProps = {
     icono: ReactNode

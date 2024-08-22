@@ -6,6 +6,7 @@ import Section from "@/components/Section";
 import Tecnologias from "@/components/Tecnologias";
 import Image from "next/image";
 import Link from "next/link";
+import { IoWarning } from "react-icons/io5";
 
 export default function Home() {
 
@@ -40,11 +41,16 @@ export default function Home() {
           <div className='space-y-4 lg:space-y-8'>
             <Section title='Sobre mí' content={<AboutMe />} />
             <Section title='Experiencia' content={<Experience />} />
-            <Section title='Tecnologías' content={<Tecnologias />} />
             <Section title='Proyectos' content={<Projects />} />
+            <Section title='Tecnologías' content={<Tecnologias />} />
             <Section title='Información adicional' content={<></>} />
           </div>
         </section>
+        <aside className='flex items-center justify-center fixed bottom-2 lg:bottom-5 left-2 lg:left-5 bg-cyberorange/85 px-4 lg:px-7 py-1 lg:py-2 rounded-se-lg gap-1 lg:gap-3'>
+          <p className='text-base lg:text-2xl'><IoWarning /></p>
+          <h1 className='uppercase text-sm lg:text-xl font-sf_pixelate'>No tienes permiso</h1>
+          <p className='text-base lg:text-2xl'><IoWarning /></p>
+        </aside>
       </main>
     </>
   );

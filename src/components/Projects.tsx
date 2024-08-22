@@ -39,8 +39,8 @@ export default function Projects() {
           </header>
           <footer className='h-[32%] lg:h-[41%] mt-2 lg:mt-3 border-t-2 lg:border-t-8 border-dashed lg:border-dotted border-cyberblack relative'>
             <div className='h-full w-full flex items-center overflow-y-auto gap-1 lg:gap-3 scrollbar-thin scrollbar-thumb-cybergreen-300 scrollbar-track-transparent px-2 lg:px-4'>
-              {techs.map(tech => (
-                <p className='flex items-center uppercase bg-cybergreen-100 text-blue-800 text-xs lg:text-lg font-sf_pixelate px-2.5 py-0.5 rounded'><span className='text-sm lg:text-2xl me-1'>{tech.logo}</span>{tech.nombre}</p>
+              {techs.map((tech, index) => (
+                <p key={index} className='flex items-center uppercase bg-cybergreen-100 text-blue-800 text-xs lg:text-lg font-sf_pixelate px-2.5 py-0.5 rounded'><span className='text-sm lg:text-2xl me-1'>{tech.logo}</span>{tech.nombre}</p>
               ))}
             </div>
           </footer>

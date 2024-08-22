@@ -28,7 +28,7 @@ export const eventReducer = (
     if (action.type === 'scanlines-on') {
 
         return {
-            state,
+            ...state,
             scanlines: true
         }
     }
@@ -37,7 +37,7 @@ export const eventReducer = (
     if (action.type === 'scanlines-off') {
 
         return {
-            state,
+            ...state,
             scanlines: false
         }
     }
@@ -46,7 +46,7 @@ export const eventReducer = (
     if (action.type === 'warning-on') {
 
         return {
-            state,
+            ...state,
             warning: true
         }
     }
@@ -55,7 +55,7 @@ export const eventReducer = (
     if (action.type === 'warning-off') {
 
         return {
-            state,
+            ...state,
             warning: false
         }
     }

@@ -7,13 +7,16 @@ import Tecnologias from "@/components/Tecnologias";
 import Warning from "@/components/Warning";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import ScanLines from "@/components/ScanLines";
+import Settings from "@/components/Settings";
 
 //Vista Principal
 export default function Home() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none scanlines z-50" /> {/*<== EFECTO SCAN LINE*/}
+      <ScanLines /> {/*<== EFECTO SCAN LINE*/}
       <main>
         {/*Barra superior con navegación*/}
         <header className='blur-[0.5px] lg:blur-[0.7px] bg-cyberblack shadow-xl shadow-cyberblack flex justify-between fixed top-0 left-0 right-0 py-5 pl-5 z-30'>
@@ -31,7 +34,8 @@ export default function Home() {
         </header>
         {/*Sobrevista de mí persona más información de contacto*/}
         <section id='inicio' className='blur-[0.5px] lg:blur-[0.7px] pb-16 pt-20'>
-          <header className='mt-16 flex flex-col justify-center items-center w-full mb-14 lg:mb-20'>
+          <header className='relative mt-16 flex flex-col justify-center items-center w-full mb-14 lg:mb-20'>
+            <Settings /> {/*<-- Herramientas*/}
             <h1 className='uppercase text-cybergreen-100 text-lg lg:text-2xl font-inconsolata font-bold tracking-widest'>JOSÉ ANTONIO</h1>
             <section className='h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] opacity-60 mt-3 shadow-md shadow-cybergreen-100 relative'>
               <Image className='absolute object-cover h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] rounded-sm pointer-events-none' src={'/mine/Photo2.jpg'} alt='Mi Persona' width={250} height={300} priority />
@@ -39,8 +43,7 @@ export default function Home() {
                 <h2 className='uppercase font-sf_pixelate font-bold tracking-widest text-cybergreen-100 text-xs lg:text-lg'>{`< Front-End >`}</h2>
               </div>
             </section>
-            {/*Botones de contacto*/}
-            <ButtonSocial />
+            <ButtonSocial /> {/*<--Botones de contacto*/}
           </header>
           {/*Las secciones que componen mí información*/}
           <div className='space-y-4 lg:space-y-8'>

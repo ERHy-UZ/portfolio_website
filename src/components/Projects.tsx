@@ -79,30 +79,30 @@ export default function Projects() {
       {/*Proyecto de Ecommerce de farmacia*/}
       <ProjectCard
         image='/farmacia.jpg'
-        title='Ecommerce farmacia'
-        descripciones={['Front-End para un Ecommerce de una farmacia.', '[PROYECTO DE EMPRESA]']}
+        title='E-commerce farmacia'
+        descripciones={['Front-End para un E-commerce de una farmacia.', '[PROYECTO DE EMPRESA]']}
         techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }]}
       />
       {/*Proyecto de Nutrilife*/}
       <ProjectCard
         image='/nutri.jpg'
         title='NutriLife'
-        descripciones={['Front-End para aplicación para nutriólogos.', 'Se creo tanto el sitio web como la aplicación móvil.', '[PROYECTO DE EMPRESA]']}
+        descripciones={['Front-End para aplicación para nutriólogos.', 'Se creó tanto el sitio web como la aplicación móvil.', '[PROYECTO DE EMPRESA]']}
         techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <SiMui />, nombre: 'MUI'}]}
       />
       {/*Proyecto de Calculadora de Consumo y Propinas*/}
       <ProjectCard
         image='/propinas.jpg'
-        title='Calculadora de Consumo y Propinas'
-        descripciones={['Mini Proyecto que te da el precio de lo que consumió y la propina.', 'En este se usaron conceptos como Hooks (useState y useMemo para mejora de performance) así como el uso de un Custom Hook para escalabilidad.']}
+        title='Calculadora de consumo y propinas'
+        descripciones={['Mini proyecto que te da el precio de lo que consumió y la propina.', 'En este se usaron conceptos como Hooks (useState y useMemo para mejora de performance), así como el uso de un Custom Hook para escalabilidad.']}
         techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <SiMui />, nombre: 'MUI'}]}
         link='https://calculadora-consumo-propina-gimikode.netlify.app/'
       />
       {/*Proyecto de Calculadora de Contador de Calorías*/}
       <ProjectCard
         image='/calorias.jpg'
-        title='Contador de Calorías'
-        descripciones={['Mini Proyecto que cuenta las calorías que se queman y consumen.', 'Se puso en practica los Hooks de React en especifico useState, useEffect, useMemo(Para mejora de rendimiento) y useReducer(Para almacenar los datos).']}
+        title='Contador de calorías'
+        descripciones={['Mini proyecto que cuenta las calorías que se queman y consumen.', 'Se puso en práctica los Hooks de React en específico useState, useEffect, useMemo(Para mejora de rendimiento) y useReducer(Para almacenar los datos).']}
         techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <CgFramer />, nombre: 'Framer_Motion' }]}
         link='https://contador-calorias-gimikode.netlify.app/'
       />

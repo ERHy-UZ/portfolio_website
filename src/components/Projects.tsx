@@ -67,7 +67,7 @@ export default function Projects() {
         image='/nutri.jpg'
         title='NutriLife Web'
         descripciones={['Front-End para aplicación para nutriólogos.', 'Se creo tanto el sitio web como la aplicación móvil.']}
-        techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <BiLogoJavascript />, nombre: 'Javascript' }]}
+        techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'Native' } ,{ logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <BiLogoJavascript />, nombre: 'Javascript' }]}
       />
     </section>
   )

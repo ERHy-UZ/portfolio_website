@@ -1,19 +1,21 @@
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
-import ButtonSocial from "@/components/framermotion/ButtonSocial";
+import ButtonSocial from "@/components/ButtonSocial";
 import Projects from "@/components/Projects";
 import Section from "@/components/Section";
 import Tecnologias from "@/components/Tecnologias";
+import Warning from "@/components/Warning";
 import Image from "next/image";
 import Link from "next/link";
-import { IoWarning } from "react-icons/io5";
 
+//Vista Principal
 export default function Home() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-full pointer-events-none scanlines z-50" />
+      <div className="fixed top-0 left-0 w-full h-full pointer-events-none scanlines z-50" /> {/*<== EFECTO SCAN LINE*/}
       <main>
+        {/*Barra superior con navegación*/}
         <header className='blur-[0.5px] lg:blur-[0.7px] bg-cyberblack shadow-xl shadow-cyberblack flex justify-between fixed top-0 left-0 right-0 py-5 pl-5 z-30'>
           <Link href={'/gimikode'} className='h-7 w-7 lg:h-10 lg:w-10'>
             <Image className='h-7 w-7 lg:h-10 lg:w-10' draggable='false' src={`/Logo_Gimikode.svg`} alt='Logo' width={30} height={30} priority />
@@ -27,6 +29,7 @@ export default function Home() {
             </div>
           </nav>
         </header>
+        {/*Sobrevista de mí persona más información de contacto*/}
         <section id='inicio' className='blur-[0.5px] lg:blur-[0.7px] pb-16 pt-20'>
           <header className='mt-16 flex flex-col justify-center items-center w-full mb-14 lg:mb-20'>
             <h1 className='uppercase text-cybergreen-100 text-lg lg:text-2xl font-inconsolata font-bold tracking-widest'>JOSÉ ANTONIO</h1>
@@ -36,21 +39,21 @@ export default function Home() {
                 <h2 className='uppercase font-sf_pixelate font-bold tracking-widest text-cybergreen-100 text-xs lg:text-lg'>{`< Front-End >`}</h2>
               </div>
             </section>
+            {/*Botones de contacto*/}
             <ButtonSocial />
           </header>
+          {/*Las secciones que componen mí información*/}
           <div className='space-y-4 lg:space-y-8'>
-            <Section title='Sobre mí' content={<AboutMe />} />
-            <Section title='Experiencia' content={<Experience />} />
-            <Section title='Proyectos' content={<Projects />} />
-            <Section title='Tecnologías' content={<Tecnologias />} />
-            <Section title='Información adicional' content={<></>} />
+            <Section title='Sobre mí' content={<AboutMe />} /> {/*Sección que habla sobre mí*/}
+            <Section title='Experiencia' content={<Experience />} /> {/*Sección que muestra mí experiencia */}
+            <Section title='Proyectos' content={<Projects />} /> {/*Sección que muestra mis proyectos realizados*/}
+            <Section title='Tecnologías' content={<Tecnologias />} /> {/*Sección que muestra las tecnologías que uso*/}
+            <Section title='Certificaciones' content={<></>} /> {/*Sección sobre certificaciones obtenidas*/}
+            <Section title='Información adicional' content={<></>} /> {/*Sección sobre información menos relevante*/}
           </div>
         </section>
-        <aside className='flex items-center justify-center fixed bottom-2 lg:bottom-5 left-2 lg:left-5 bg-cyberorange/85 px-4 lg:px-7 py-1 lg:py-2 rounded-se-lg gap-1 lg:gap-3'>
-          <p className='text-base lg:text-2xl'><IoWarning /></p>
-          <h1 className='uppercase text-sm lg:text-xl font-sf_pixelate'>No tienes permiso</h1>
-          <p className='text-base lg:text-2xl'><IoWarning /></p>
-        </aside>
+        {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}
+        <Warning />
       </main>
     </>
   );

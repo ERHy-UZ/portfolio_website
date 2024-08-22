@@ -4,15 +4,20 @@ import Image from "next/image"
 import { useState } from "react";
 import { useGlitch, GlitchHandle } from 'react-powerglitch'
 
+//Componte de pagina en desarrollo
 export default function DefaultComponent() {
 
     const NAME_ = 'Gimikode'
     const LOGO_ = ['Gimikode', 'Gimi']
     const TITLE_ = ['Gimmicks in Code, Magic in Results', 'Esta página web no está disponible']
 
+    //Estado para almacenar el un valor numérico para cambiar el logo y texto que se muestra
     const [toggleState, setToggleState] = useState(0)
+
+    //Efecto glitch para logo
     const glitch: GlitchHandle = useGlitch({ playMode: 'always', slice: { hueRotate: false, count: 10 }, glitchTimeSpan: { start: .5, end: .7 } })
 
+    //Cambia el estado, dependiendo el estado mostrara una variación en el logo y el texto
     const handleChangeWords = () => {
         setToggleState(toggleState === 0 ? 1 : 0)
     }

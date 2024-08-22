@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ReactNode } from "react"
 
+//Types
 type TimelineSegmentProps = {
     title: string
     time: string
@@ -11,8 +12,10 @@ type TimelineSegmentProps = {
     isRecent: boolean
 }
 
+//Componente que muestra la experiencia en forma de linea de tiempo
 export default function Experience() {
 
+    //Componente que muestra un segmento de la linea de tiempo de acuerdo a los props
     const TimelineSegment = ({ title, time, content, aditional, isRecent }: TimelineSegmentProps) => (
         <li className="ms-3 lg:ms-6">
             <motion.span
@@ -37,12 +40,14 @@ export default function Experience() {
     return (
         <ul className="relative border-s border-cybergreen-100 mt-6 w-[96%] mx-auto">
             {<>
+                {/*Segmento de la linea de tiempo más actual*/}
                 <TimelineSegment
                     title='Desarrollador Front-End.'
                     time='Softnergysolutions | Enero 2024 - Junio 2024'
                     content='Desarrollé interfaces con React.js, Next.js y React Native, usando CSS, Tailwind y Styled Components. Colaboré con Back-End y diseñadores para asegurar funcionalidad y coherencia visual.'
                     isRecent={true}
                 />
+                {/*Segmento de la linea de tiempo*/}
                 <TimelineSegment
                     title='Terminación de estudios.'
                     time='Agosto 2018 - Junio 2024'

@@ -9,20 +9,27 @@ import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { useGlitch, GlitchHandle } from 'react-powerglitch'
 
+//Types
 type ProjectCardProps = {
   image: string
   title: string
   descripciones: string[]
   techs: FooterTechs[]
+  link?: string
 }
 
+//Componente que muestra los proyectos que he realizado, se muestran en cards o en lista dependiendo del tamaño de la pantalla
 export default function Projects() {
 
-  const ProjectCard = ({ image, title, descripciones: descripciones, techs }: ProjectCardProps) => {
+  //Componente que muestra un solo card o lista de acuerdo a los props
+  const ProjectCard = ({ image, title, descripciones: descripciones, techs, link }: ProjectCardProps) => {
     const glitch: GlitchHandle = useGlitch({ playMode: 'click', slice: { hueRotate: false, count: 10 }, glitchTimeSpan: { start: .5, end: .7 } })
 
     return (
-      <motion.div
+      <motion.a
+        href={link}
+        referrerPolicy='no-referrer'
+        target='_blank'
         whileHover={{ scale: 1.06 }}
         transition={{
           ease: 'easeInOut',
@@ -45,29 +52,32 @@ export default function Projects() {
             </div>
           </footer>
         </div>
-      </motion.div>
+      </motion.a>
     )
   }
 
   return (
     <section id='proyectos' className='grid md:grid-cols-2 2xl:grid-cols-3 gap-5'>
+      {/*Proyecto de Facturar*/}
       <ProjectCard
         image='/facturar.jpg'
         title='Facturador web'
         descripciones={['Creación del Front-End para una aplicación web para facturar.']}
         techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <BiLogoJavascript />, nombre: 'Javascript' }]}
       />
+      {/*Proyecto de Ecommerce de farmacia*/}
       <ProjectCard
         image='/farmacia.jpg'
-        title='Ecommerce para farmacia'
+        title='Ecommerce farmacia'
         descripciones={['Front-End para un Ecommerce de una farmacia.']}
         techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <BiLogoJavascript />, nombre: 'Javascript' }]}
       />
+      {/*Proyecto de Nutrilife*/}
       <ProjectCard
         image='/nutri.jpg'
-        title='NutriLife Web'
+        title='NutriLife'
         descripciones={['Front-End para aplicación para nutriólogos.', 'Se creo tanto el sitio web como la aplicación móvil.']}
-        techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'Native' } ,{ logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <BiLogoJavascript />, nombre: 'Javascript' }]}
+        techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'Native' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <BiLogoJavascript />, nombre: 'Javascript' }]}
       />
     </section>
   )

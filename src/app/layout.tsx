@@ -5,9 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PORTAFOLIO",
-  description: "Creado con Next.js",
-  icons: '/Logo_Gimikode.svg'
+  title: "José Antonio",
+  description: "Portafolio de José Antonio Trejo Moreno",
+  keywords: "Portafolio",
+  icons: '/Logo_Gimikode.svg',
+  creator: 'José Antonio Trejo Moreno',
 };
 
 export default function RootLayout({ children }: Readonly<{

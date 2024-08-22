@@ -1,10 +1,12 @@
 import { ReactNode } from "react"
 
+//Types
 type SectionProps = {
     title: string
     content: ReactNode
 }
 
+//Componente padre de las secciones, muestra solamente el titulo y renderiza el componente del contenido
 export default function Section({ title, content }: SectionProps) {
     return (
         <section className='w-[90%] lg:w-3/5 mx-auto'>

@@ -3,7 +3,6 @@ import Experience from "@/components/Experience";
 import ButtonSocial from "@/components/utils/ButtonSocial";
 import Projects from "@/components/Projects";
 import Section from "@/components/utils/Section";
-import Tecnologias from "@/components/Tecnologias";
 import Warning from "@/components/utils/Warning";
 import Image from "next/image";
 import Link from "next/link";
@@ -50,8 +49,6 @@ export default function Home() {
             <Section title='Sobre mí' content={<AboutMe />} /> {/*Sección que habla sobre mí*/}
             <Section title='Experiencia' content={<Experience />} /> {/*Sección que muestra mí experiencia */}
             <Section title='Proyectos' content={<Projects />} /> {/*Sección que muestra mis proyectos realizados*/}
-            <Section title='Tecnologías' content={<Tecnologias />} /> {/*Sección que muestra las tecnologías que uso*/}
-            <Section title='Certificaciones' content={<></>} /> {/*Sección sobre certificaciones obtenidas*/}
             <Section title='Información adicional' content={<></>} /> {/*Sección sobre información menos relevante*/}
           </div>
         </section>

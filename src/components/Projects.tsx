@@ -2,23 +2,10 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import type { FooterTechs } from "@/types";
-import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
-import { CgFramer } from "react-icons/cg";
-import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
-import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
-import { SiMui } from "react-icons/si";
+import type { ProjectType } from "@/types";
 import { useEvent } from "@/hooks/useEvent";
 import { useRouter } from 'next/navigation'
-
-//Types
-type ProjectCardProps = {
-  image: string
-  title: string
-  descripciones: string[]
-  techs: FooterTechs[]
-  link?: string
-}
+import { Projects as proyectos } from "@/db/projects";
 
 //Componente que muestra los proyectos que he realizado, se muestran en cards o en lista dependiendo del tamaño de la pantalla
 export default function Projects() {
@@ -26,10 +13,11 @@ export default function Projects() {
   //LLamar al hook del context
   const { state, dispatch } = useEvent()
 
+  //enrutador
   const router = useRouter()
 
   //Componente que muestra un solo card o lista de acuerdo a los props
-  const ProjectCard = ({ image, title, descripciones: descripciones, techs, link }: ProjectCardProps) => {
+  const ProjectCard = ({ image, title, descripciones: descripciones, techs, link }: ProjectType) => {
 
     //Manejador que muestra la advertencia en caso de no tener un link
     const handleEnableWarning = () => {
@@ -73,47 +61,21 @@ export default function Projects() {
   return (
     <>
       <div id='proyectos' className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5'>
-        {/*Proyecto de Facturar*/}
-        <ProjectCard
-          image='/facturar.jpg'
-          title='Facturador web'
-          descripciones={['Creación del Front-End para una aplicación web para facturar.', '[PROYECTO DE EMPRESA]']}
-          techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }]}
-        />
-        {/*Proyecto de Ecommerce de farmacia*/}
-        <ProjectCard
-          image='/farmacia.jpg'
-          title='E-commerce farmacia'
-          descripciones={['Front-End para un E-commerce de una farmacia.', '[PROYECTO DE EMPRESA]']}
-          techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }]}
-        />
-        {/*Proyecto de Nutrilife*/}
-        <ProjectCard
-          image='/nutri.jpg'
-          title='NutriLife'
-          descripciones={['Front-End para aplicación para nutriólogos web y móvil.', '[PROYECTO DE EMPRESA]']}
-          techs={[{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <SiMui />, nombre: 'MUI' }]}
-        />
-        {/*Proyecto de Calculadora de Consumo y Propinas*/}
-        <ProjectCard
-          image='/propinas.jpg'
-          title='Calculadora de consumo y propinas'
-          descripciones={['Mini proyecto que te da el precio de lo que consumió y la propina.', 'En este se usaron conceptos como Hooks (useState y useMemo para mejora de performance), así como el uso de un Custom Hook para escalabilidad.']}
-          techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <SiMui />, nombre: 'MUI' }]}
-          link='https://calculadora-consumo-propina-gimikode.netlify.app/'
-        />
-        {/*Proyecto de Calculadora de Contador de Calorías*/}
-        <ProjectCard
-          image='/calorias.jpg'
-          title='Contador de calorías'
-          descripciones={['Mini proyecto que cuenta las calorías que se queman y consumen.', 'Se puso en práctica los Hooks de React en específico useState, useEffect, useMemo(Para mejora de rendimiento) y useReducer(Para almacenar los datos).']}
-          techs={[{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <CgFramer />, nombre: 'Framer_Motion' }]}
-          link='https://contador-calorias-gimikode.netlify.app/'
-        />
+        {proyectos.map((proyecto, index) => (
+          index < 6 &&
+          <ProjectCard
+            key={index}
+            image={proyecto.image}
+            title={proyecto.title}
+            descripciones={proyecto.descripciones}
+            techs={proyecto.techs}
+            link={proyecto.link}
+          />
+        ))}
       </div>
       <div className='w-full flex justify-end px-1 lg:px-4 items-center pt-4 lg:pt-8'>
         <motion.button
-          type="button" 
+          type="button"
           onClick={() => router.push('/my_projects')}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1 }}

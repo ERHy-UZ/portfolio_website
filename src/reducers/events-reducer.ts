@@ -4,17 +4,21 @@
 export type EventActions =
     { type: 'scanlines-on' } |
     { type: 'scanlines-off' } |
+    { type: 'flicker-on' } |
+    { type: 'flicker-off' } |
     { type: 'warning-on' } |
     { type: 'warning-off' }
 
 export type EventState = {
     scanlines: boolean
+    flicker: boolean
     warning: boolean
 }
 
 //Estado inicial
 export const initialState: EventState = {
     scanlines: true,
+    flicker: true,
     warning: false
 }
 
@@ -39,6 +43,24 @@ export const eventReducer = (
         return {
             ...state,
             scanlines: false
+        }
+    }
+
+    //Para activar el efecto de parpadeo
+    if (action.type === 'flicker-on') {
+
+        return {
+            ...state,
+            flicker: true
+        }
+    }
+
+    //Para desactivar el efecto de parpadeo
+    if (action.type === 'flicker-off') {
+
+        return {
+            ...state,
+            flicker: false
         }
     }
 

@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScanLines from "@/components/effects/ScanLines";
 import Settings from "@/components/utils/Settings";
+import FlickerMain from "@/components/effects/FlickerMain";
 
 //Vista Principal
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <>
       <ScanLines /> {/*<== EFECTO SCAN LINE*/}
-      <main>
+      <FlickerMain> {/*<== Etiqueta 'main' con efecto FLICKER*/}
         {/*Barra superior con navegación*/}
         <header className='blur-[0.5px] lg:blur-[0.7px] bg-cyberblack shadow-xl shadow-cyberblack flex justify-between fixed top-0 left-0 right-0 py-5 pl-5 z-30'>
           <Link href={'/gimikode'} className='h-7 w-7 lg:h-10 lg:w-10'>
@@ -56,7 +57,7 @@ export default function Home() {
         </section>
         {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}
         <Warning />
-      </main>
+      </FlickerMain>
     </>
   );
 }

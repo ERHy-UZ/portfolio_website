@@ -41,13 +41,13 @@ export default function Tecnologias() {
                 drag
                 dragConstraints={constraintsRef}
                 className={`flex justify-center items-center ${pos}  ${isGrabbing ? 'cursor-grabbing' : 'cursor-grab'}`}>
-                <h2 className={`text-4xl lg:text-7xl ${color}`}>{icono}</h2>
+                <span className={`text-4xl lg:text-7xl ${color}`}>{icono}</span>
             </motion.section>
         )
     }
 
     return (
-        <section
+        <div
             ref={constraintsRef}
             className='z-10 w-full mx-auto bg-gradient-to-b from-cyberblue-200 via-cyberblue-300 border-t-2 border-cyan-900 overflow-hidden'>
             <div className='grid grid-cols-6 gap-y-3 lg:gap-y-5 gap-x-2 lg:gap-x-4 w-[80%] lg:w-[50%] mx-auto py-5 lg:py-10'>
@@ -68,6 +68,6 @@ export default function Tecnologias() {
                 {/* FRAMER MOTION */}
                 <RecuadroTech icono={<CgFramer />} color='text-purple-600' pos='col-start-3' />
             </div>
-        </section>
+        </div>
     )
 }

@@ -1,5 +1,5 @@
-import DefaultComponent from "@/components/DefaultComponent";
-import ScanLines from "@/components/ScanLines";
+import DefaultComponent from "@/components/utils/DefaultComponent";
+import ScanLines from "@/components/effects/ScanLines";
 
 //Pagina de GIMIKODE [EN DESARROLLO]
 export default function Gimikode() {

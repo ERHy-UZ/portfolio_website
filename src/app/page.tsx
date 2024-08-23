@@ -1,14 +1,14 @@
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
-import ButtonSocial from "@/components/ButtonSocial";
+import ButtonSocial from "@/components/utils/ButtonSocial";
 import Projects from "@/components/Projects";
-import Section from "@/components/Section";
+import Section from "@/components/utils/Section";
 import Tecnologias from "@/components/Tecnologias";
-import Warning from "@/components/Warning";
+import Warning from "@/components/utils/Warning";
 import Image from "next/image";
 import Link from "next/link";
-import ScanLines from "@/components/ScanLines";
-import Settings from "@/components/Settings";
+import ScanLines from "@/components/effects/ScanLines";
+import Settings from "@/components/utils/Settings";
 
 //Vista Principal
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
             <section className='h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] opacity-60 mt-3 shadow-md shadow-cybergreen-100 relative'>
               <Image className='absolute object-cover h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] rounded-sm pointer-events-none' src={'/mine/Photo2.jpg'} alt='Mi Persona' width={250} height={300} priority />
               <div className='flex absolute h-full w-full items-end justify-center p-3'>
-                <h2 className='uppercase font-sf_pixelate font-bold tracking-widest text-cybergreen-100 text-xs lg:text-lg'>{`< Front-End >`}</h2>
+                <span className='uppercase font-sf_pixelate font-bold tracking-widest text-cybergreen-100 text-xs lg:text-lg'>{`< Front-End >`}</span>
               </div>
             </section>
             <ButtonSocial /> {/*<--Botones de contacto*/}

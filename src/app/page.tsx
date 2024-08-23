@@ -55,9 +55,9 @@ export default function Home() {
             <Section title='Información adicional' content={<></>} /> {/*Sección sobre información menos relevante*/}
           </div>
         </section>
-        {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}
-        <Warning />
       </FlickerMain>
+      {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}
+      <Warning />
     </>
   );
 }

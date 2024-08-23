@@ -1,6 +1,7 @@
 import FlickerMain from "@/components/effects/FlickerMain";
 import ScanLines from "@/components/effects/ScanLines";
 import SingleProject from "@/components/utils/SingleProject";
+import Warning from "@/components/utils/Warning";
 import { Projects } from "@/db/projects";
 
 export default function My_Projects() {
@@ -22,6 +23,8 @@ export default function My_Projects() {
                     ))}
                 </section>
             </FlickerMain>
+            {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}
+            <Warning />
         </>
     )
 }

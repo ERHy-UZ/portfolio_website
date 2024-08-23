@@ -14,7 +14,7 @@ export default function Settings() {
     const handleToggle = () => state.scanlines ? dispatch({ type: 'scanlines-off' }) : dispatch({ type: 'scanlines-on' })
 
     return (
-        <nav className='absolute flex h-14 lg:h-28 flex-col -top-8 left-4 py-1 lg:py-2 px-0 lg:px-1 bg-neutral-800 rounded-md border border-cybergreen-100 shadow-inner shadow-cyberblack'>
+        <nav className='absolute flex h-14 lg:h-28 flex-col -top-12 lg:-top-8 left-5 lg:left-4 py-1 lg:py-2 px-0 lg:px-1 bg-neutral-800 rounded-md border border-cybergreen-100 shadow-inner shadow-cyberblack'>
             <div className='relative flex justify-center items-center group'>
                 <motion.button
                     onClick={handleToggle}

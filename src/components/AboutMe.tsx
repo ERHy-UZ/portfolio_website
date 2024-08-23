@@ -4,7 +4,7 @@ export default function AboutMe() {
     return (
         <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6'>
             <section className='col-span-2 bg-gradient-to-b from-cyberblue-100 to-cyberblue-200 p-3 lg:p-6 rounded-sm border-t border-t-cybergreen-200'>
-                <h1 className='uppercase text-cybergreen-200 font-w95f4 text-sm lg:text-2xl tracking-widest mb-3 lg:mb-5'>José Antonio Trejo Moreno</h1>
+                <h1 className='uppercase text-cybergreen-200 font-w95f4 text-base lg:text-2xl tracking-widest mb-3 lg:mb-5'>José Antonio Trejo Moreno</h1>
                 <p className='text-cyberwhite text-sm lg:text-xl font-inconsolata font-semibold lg:font-bold tracking-wide lg:tracking-widest mb-2 lg:mb-3'><span className='italic text-cybergreen-100'>Ingeniero en Sistemas Computacionales</span> de nacionalidad mexicana.</p>
                 <p className='text-cyberwhite text-sm lg:text-xl font-inconsolata font-semibold lg:font-bold tracking-wide lg:tracking-widest mb-2 lg:mb-3'>Enfocado principalmente en Front-End, con conocimientos en otras áreas.</p>
             </section>

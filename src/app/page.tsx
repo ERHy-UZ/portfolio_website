@@ -7,7 +7,6 @@ import Tecnologias from "@/components/Tecnologias";
 import Warning from "@/components/Warning";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import ScanLines from "@/components/ScanLines";
 import Settings from "@/components/Settings";
 

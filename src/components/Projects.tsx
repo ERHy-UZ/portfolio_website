@@ -3,10 +3,13 @@
 import { motion } from "framer-motion";
 import { useRouter } from 'next/navigation'
 import SingleProject from "./utils/SingleProject";
-import { Projects as proyectos } from "@/db/projects";
+import { Projects as proj } from "@/db/projects";
+import { useMemo } from "react";
 
 //Componente que muestra 6 proyectos que se han realizado
 export default function Projects() {
+
+  const proyectos = useMemo(() => proj, [proj])
 
   //Enrutador
   const router = useRouter()

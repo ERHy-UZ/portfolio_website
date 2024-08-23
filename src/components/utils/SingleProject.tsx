@@ -3,12 +3,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEvent } from "@/hooks/useEvent";
-
 import { ProjectType } from "@/types";
-
+import { memo } from "react";
 
 //Componente que muestra un solo proyecto de acuerdo a los props, se muestran en cards o en lista dependiendo del tamaño de la pantalla
-export default function SingleProject({ image, title, descripciones: descripciones, techs, link }: ProjectType) {
+const SingleProject = memo(({ image, title, descripciones: descripciones, techs, link }: ProjectType) => { {/*<-- memo se utiliza como useMemo, se renderiza si los props cambian*/}
 
     //LLamar al hook del context
     const { state, dispatch } = useEvent()
@@ -50,4 +49,8 @@ export default function SingleProject({ image, title, descripciones: descripcion
             </div>
         </motion.a>
     )
-}
+})
+
+SingleProject.displayName = 'SingleProject'
+
+export default SingleProject

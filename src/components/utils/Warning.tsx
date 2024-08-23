@@ -17,7 +17,7 @@ export default function Warning() {
                 dispatch({ type: 'warning-off' })
             }, 2000);
         }
-    }, [state.warning])
+    }, [state.warning, dispatch])
 
     return (
         <aside className={`${!state.warning && 'hidden'} flex items-center justify-center fixed bottom-2 lg:bottom-5 left-2 lg:left-5 bg-cyberorange/85 px-4 lg:px-7 py-1 lg:py-2 rounded-se-lg gap-1 lg:gap-3 cursor-not-allowed`}>

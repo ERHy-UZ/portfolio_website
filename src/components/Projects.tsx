@@ -13,9 +13,9 @@ export default function Projects() {
 
   return (
     <>
-      <div id='proyectos' className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5'>
+      <div id='proyectos' className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5'>
         {proyectos.map((proyecto, index) => (
-          index < 6 &&
+          index < 3 &&
           <SingleProject
             key={index}
             image={proyecto.image}

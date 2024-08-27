@@ -1,15 +1,21 @@
 import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { CgFramer } from "react-icons/cg";
-import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import { BiLogoJavascript, BiLogoTypescript, BiLogoFirebase, BiLogoAndroid } from "react-icons/bi";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 
 import type { ProjectType } from "@/types";
 
-export const Projects : ProjectType[] = [
+export const Projects: ProjectType[] = [
+    {
+        image: '/truck.jpg',
+        title: 'FORTIZON',
+        descripciones: ['Aplicación móvil para administrar camiones.', '[EXPO HALCÓN 2023]'],
+        techs: [{ logo: <RiReactjsFill />, nombre: 'React_Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'CSS' }, { logo: <BiLogoFirebase />, nombre: 'FireBase' }, { logo: <BiLogoAndroid />, nombre: 'Android_Studio'}]
+    },
     {
         image: '/facturar.jpg',
-        title: 'Facturador web',
+        title: 'Facturador total',
         descripciones: ['Creación del Front-End para una aplicación web para facturar.', '[PROYECTO DE EMPRESA]'],
         techs: [{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }]
     },
@@ -23,7 +29,7 @@ export const Projects : ProjectType[] = [
         image: '/nutri.jpg',
         title: 'NutriLife',
         descripciones: ['Front-End para aplicación para nutriólogos web y móvil.', '[PROYECTO DE EMPRESA]'],
-        techs: [{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <SiMui />, nombre: 'MUI' }]
+        techs: [{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'React_Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <SiMui />, nombre: 'MUI' }]
     },
     {
         image: '/propinas.jpg',

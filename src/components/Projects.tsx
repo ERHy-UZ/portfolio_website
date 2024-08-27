@@ -32,7 +32,7 @@ export default function Projects() {
           onClick={() => router.push('/my_projects')}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 1 }}
-          className={`uppercase bg-cybergreen-200 text-cyberblack font-sf_pixelate font-bold text-base md:text-lg lg:text-xl tracking-wider px-2 lg:px-3 lg:py-1 rounded-[4px]`}>{'ver más >>'}</motion.button>
+          className={`uppercase bg-cybergreen-200 text-cyberblack font-sf_pixelate font-bold text-sm md:text-lg lg:text-xl tracking-wider px-2 lg:px-3 lg:py-1 rounded-[4px]`}>{'ver más >>'}</motion.button>
       </div>
     </>
   )

@@ -9,6 +9,7 @@ import Link from "next/link";
 import ScanLines from "@/components/effects/ScanLines";
 import Settings from "@/components/utils/Settings";
 import FlickerMain from "@/components/effects/FlickerMain";
+import MoreInfo from "@/components/MoreInfo";
 
 //Vista Principal
 export default function Home() {
@@ -49,9 +50,12 @@ export default function Home() {
             <Section title='Sobre mí' content={<AboutMe />} /> {/*Sección que habla sobre mí*/}
             <Section title='Experiencia' content={<Experience />} /> {/*Sección que muestra mí experiencia */}
             <Section title='Proyectos' content={<Projects />} /> {/*Sección que muestra mis proyectos realizados*/}
-            <Section title='Información adicional' content={<></>} /> {/*Sección sobre información menos relevante*/}
+            <Section title='Información adicional' content={<MoreInfo />} /> {/*Sección sobre información menos relevante*/}
           </div>
         </section>
+        <footer className='flex items-center h-24 bg-cybergreen-300/30'>
+          <p className='font-sf_pixelate text-cyberwhite uppercase text-xs lg:text-base w-[90%] lg:w-3/5 mx-auto'>© 2024 GIMIKODE. Derechos reservados sobre nombre, logotipo y eslogan.</p>
+        </footer>
       </FlickerMain>
       {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}
       <Warning />

@@ -10,7 +10,7 @@ export default function My_Projects() {
             <ScanLines /> {/*<== EFECTO SCAN LINE*/}
             <FlickerMain classes='flex flex-col justify-center items-center m-5 blur-[0.5px] lg:blur-[0.7px]'> {/*<== Etiqueta 'main' con efecto FLICKER*/}
                 <h1 className='bg-cybergreen-300 px-16 md:px-25 py-5 md:py-7 uppercase text-xl md:text-2xl lg:text-3xl text-cyberwhite font-sf_pixelate rounded-sm border-2 border-cybergreen-100'>Mis proyectos</h1>
-                <section className='w-[90%] mt-10 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-5'>
+                <section className='w-[90%] mt-10 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-5 mb-6'>
                     {Projects.map((project, index) => (
                         <SingleProject
                             key={index}

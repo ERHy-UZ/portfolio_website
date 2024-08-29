@@ -14,6 +14,13 @@ export const Projects: ProjectType[] = [
         techs: [{ logo: <RiReactjsFill />, nombre: 'React_Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'CSS' }, { logo: <BiLogoFirebase />, nombre: 'FireBase' }, { logo: <BiLogoAndroid />, nombre: 'Android_Studio'}]
     },
     {
+        image: '/negocios.jpg',
+        title: 'Directorio Negocios',
+        descripciones: ['Es una aplicación web que permite almacenar directorios de negocios. (CRUD)', '[PRUEBA TÉCNICA]'],
+        techs: [{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }],
+        link: 'https://directorio-negocios.netlify.app/'
+    },
+    {
         image: '/facturar.jpg',
         title: 'Facturador total',
         descripciones: ['Creación del Front-End para una aplicación web para facturar.', '[PROYECTO DE EMPRESA]'],

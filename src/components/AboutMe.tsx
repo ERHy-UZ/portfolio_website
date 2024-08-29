@@ -1,3 +1,4 @@
+import { Projects } from "@/db/projects"
 
 //Componente que muestra quien soy, experiencia y proyectos realizados
 export default function AboutMe() {
@@ -14,7 +15,7 @@ export default function AboutMe() {
                 <p className='absolute text-xs lg:text-xl font-sf_pixelate font-semibold text-cybergreen-200 uppercase translate-x-6 lg:translate-x-12 -translate-y-6 lg:-translate-y-12'>AÑO</p>
             </aside>
             <aside className='flex flex-col justify-center items-center bg-gradient-to-b from-cyberblue-200 to-cyberblue-300 rounded-sm border-t border-t-cybergreen-100 space-y-1'>
-                <h3 className='text-5xl lg:text-8xl text-cyberwhite font-w95f4'>6</h3>
+                <h3 className='text-5xl lg:text-8xl text-cyberwhite font-w95f4'>{Projects.length}</h3>
                 <h4 className='uppercase text-xs lg:text-xl text-cybergreen-100 font-inconsolata tracking-widest font-semibold'>Proyectos</h4>
             </aside>
         </div>

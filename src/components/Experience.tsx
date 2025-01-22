@@ -42,10 +42,22 @@ export default function Experience() {
             {<>
                 {/*Segmento de la linea de tiempo más actual*/}
                 <TimelineSegment
-                    title='Desarrollador Front-End.'
-                    time='Softnergysolutions | Enero 2024 - Junio 2024'
-                    content='Desarrollé interfaces con React.js, Next.js y React Native, usando CSS, Tailwind y Styled Components. Colaboré con Back-End y diseñadores para asegurar funcionalidad y coherencia visual.'
+                    title='Desarrollador Senior.'
+                    time='SitDigital | Enero 2025 - Actualmente'
+                    content='Desarrollar y dar soporte a proyectos para los clientes usando diversas tecnologías (Azure, Python, etc.).'
                     isRecent={true}
+                />
+                <TimelineSegment
+                    title='Desarrollador de Software.'
+                    time='IFREM | Agosto 2024 - Diciembre 2024'
+                    content='Diseño y desarrollo de aplicaciones para dar solución a problemas internos y facilitar algunas funciones del instituto.'
+                    isRecent={false}
+                />
+                <TimelineSegment
+                    title='Desarrollador Full-Stack.'
+                    time='Softnergy Solutions | Mayo 2023 - Julio 2024'
+                    content='Desarrollé proyectos con React.js, Next.js y React Native, usando CSS, Tailwind y Styled Components. Colaboré con diseñadores para asegurar funcionalidad y coherencia en los proyectos.'
+                    isRecent={false}
                 />
                 {/*Segmento de la linea de tiempo*/}
                 <TimelineSegment

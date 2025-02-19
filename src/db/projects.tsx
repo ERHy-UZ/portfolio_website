@@ -1,6 +1,7 @@
 import { FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { CgFramer } from "react-icons/cg";
 import { BiLogoJavascript, BiLogoTypescript, BiLogoFirebase, BiLogoAndroid } from "react-icons/bi";
+import { SiVite } from "react-icons/si";
 import { RiTailwindCssFill, RiReactjsFill, RiNextjsFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 
@@ -21,6 +22,20 @@ export const Projects: ProjectType[] = [
         link: 'https://directorio-negocios.netlify.app/'
     },
     {
+        image: '/print.jpg',
+        title: 'Print Log',
+        descripciones: ['Aplicación web que permite ver los logs de impresión de las computadoras.', 'Se conecta a Google Drive para obtener los logs.', '[TEMPLATE]'],
+        techs: [{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }],
+        link: 'https://printlog.netlify.app/'
+    },
+    {
+        image: '/budget.jpg',
+        title: 'Control de Presupuesto',
+        descripciones: ['Mini proyecto que controla el presupuesto de un mes.', 'Se usó Context API, LocalStorage y Custom Hooks.'],
+        techs: [{ logo: <SiVite />, nombre: 'Vite' },{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <CgFramer />, nombre: 'Framer_Motion' }],
+        link: 'https://budget-manager-gimikode.netlify.app/'
+    },
+    {
         image: '/facturar.jpg',
         title: 'Facturador total',
         descripciones: ['Creación del Front-End para una aplicación web para facturar.', '[PROYECTO DE EMPRESA]'],
@@ -39,17 +54,17 @@ export const Projects: ProjectType[] = [
         techs: [{ logo: <RiNextjsFill />, nombre: 'Next' }, { logo: <RiReactjsFill />, nombre: 'React_Native' }, { logo: <BiLogoJavascript />, nombre: 'JavaScript' }, { logo: <FaCss3Alt />, nombre: 'Css' }, { logo: <SiMui />, nombre: 'MUI' }]
     },
     {
-        image: '/propinas.jpg',
-        title: 'Calculadora de consumo y propinas',
-        descripciones: ['Mini proyecto que te da el precio de lo que consumió y la propina.', 'En este se usaron conceptos como Hooks (useState y useMemo para mejora de performance), así como el uso de un Custom Hook para escalabilidad.'],
-        techs: [{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <SiMui />, nombre: 'MUI' }],
-        link: 'https://calculadora-consumo-propina-gimikode.netlify.app/'
-    },
-    {
         image: '/calorias.jpg',
         title: 'Contador de calorías',
         descripciones: ['Mini proyecto que cuenta las calorías que se queman y consumen.', 'Se puso en práctica los Hooks de React en específico useState, useEffect, useMemo(Para mejora de rendimiento) y useReducer(Para almacenar los datos).'],
         techs: [{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <CgFramer />, nombre: 'Framer_Motion' }],
         link: 'https://contador-calorias-gimikode.netlify.app/'
+    },
+    {
+        image: '/propinas.jpg',
+        title: 'Calculadora de consumo y propinas',
+        descripciones: ['Mini proyecto que te da el precio de lo que consumió y la propina.', 'En este se usaron conceptos como Hooks (useState y useMemo para mejora de performance), así como el uso de un Custom Hook para escalabilidad.'],
+        techs: [{ logo: <RiReactjsFill />, nombre: 'React' }, { logo: <BiLogoTypescript />, nombre: 'TypeScript' }, { logo: <RiTailwindCssFill />, nombre: 'Tailwind' }, { logo: <SiMui />, nombre: 'MUI' }],
+        link: 'https://calculadora-consumo-propina-gimikode.netlify.app/'
     }
 ]

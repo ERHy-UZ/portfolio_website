@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </section>
         <footer className='flex items-center h-24 bg-cybergreen-300/30'>
-          <p className='font-sf_pixelate text-cyberwhite uppercase text-xs lg:text-base w-[90%] lg:w-3/5 mx-auto'>© 2024 GIMIKODE. Derechos reservados sobre nombre, logotipo y eslogan.</p>
+          <p className='font-sf_pixelate text-cyberwhite uppercase text-xs lg:text-base w-[90%] lg:w-3/5 mx-auto'>© 2025 GIMIKODE. Derechos reservados sobre nombre, logotipo y eslogan.</p>
         </footer>
       </FlickerMain>
       {/*Advertencia que se muestra si no tiene permiso de acceder a un proyecto por confidencialidad*/}

@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react"
 import { useRouter } from 'next/navigation'
 import SingleProject from "./utils/SingleProject";
 import { Projects as proyectos } from "@/db/projects";

@@ -4,7 +4,7 @@ import { SiRetroarch } from "react-icons/si";
 import { MdVideogameAssetOff } from "react-icons/md";
 import { IoFlash, IoFlashOff } from "react-icons/io5";
 import { useEvent } from "@/hooks/useEvent";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 //Componente que contiene las configuraciones
 export default function Settings() {

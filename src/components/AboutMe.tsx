@@ -10,7 +10,7 @@ export default function AboutMe() {
                 <p className='text-cyberwhite text-sm lg:text-xl font-inconsolata font-semibold lg:font-bold tracking-wide lg:tracking-widest mb-2 lg:mb-3'>Enfocado en la resolución de problemas complejos, con conocimiento en diversas áreas.</p>
             </article>
             <aside className='h-[7rem] lg:h-auto flex flex-col justify-center items-center bg-gradient-to-b from-cyberblue-200 to-cyberblue-300 rounded-sm border-t border-t-cybergreen-100 space-y-1'>
-                <h3 className='text-5xl lg:text-8xl text-cyberwhite font-w95f4'>2</h3>
+                <h3 className='text-5xl lg:text-8xl text-cyberwhite font-w95f4'>3</h3>
                 <h4 className='uppercase text-xs lg:text-xl text-cybergreen-100 font-inconsolata tracking-widest font-semibold'>Experiencia</h4>
                 <p className='absolute text-xs lg:text-xl font-sf_pixelate font-semibold text-cybergreen-200 uppercase translate-x-10 lg:translate-x-14 -translate-y-6 lg:-translate-y-12'>AÑOS</p>
             </aside>

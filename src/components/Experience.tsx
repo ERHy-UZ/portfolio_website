@@ -42,28 +42,38 @@ export default function Experience() {
             {<>
                 {/*Segmento de la linea de tiempo más actual*/}
                 <TimelineSegment
-                    title='Desarrollador Senior.'
-                    time='SitDigital | Enero 2025 - Actualmente'
-                    content='Desarrollar y dar soporte a proyectos para los clientes usando diversas tecnologías (Azure, Python, etc.).'
+                    title="Desarrollador Senior"
+                    time="SitDigital | Enero 2025 – Actualidad"
+                    content="Desarrollo y soporte de aplicaciones enterprise para clientes de consultoría. Trabajo en entornos productivos con despliegues controlados, CI/CD y uso de servicios en Azure."
+                    aditional={
+                        <p className="mt-2 text-xs lg:text-sm text-cybergreen-100">
+                            Cliente principal: AB InBev · Stack: JavaScript, Python, Azure, Data Factory
+                        </p>
+                    }
                     isRecent={true}
                 />
                 <TimelineSegment
-                    title='Desarrollador de Software.'
-                    time='IFREM | Agosto 2024 - Diciembre 2024'
-                    content='Diseño y desarrollo de aplicaciones para dar solución a problemas internos y facilitar algunas funciones del instituto.'
+                    title="Desarrollador de Software"
+                    time="IFREM | Agosto 2024 – Enero 2025"
+                    content="Diseño y desarrollo de aplicaciones internas para optimizar procesos del instituto, así como automatización de tareas administrativas."
                     isRecent={false}
                 />
                 <TimelineSegment
-                    title='Desarrollador Full-Stack.'
-                    time='Softnergy Solutions | Mayo 2023 - Julio 2024'
-                    content='Desarrollé proyectos con React.js, Next.js y React Native, usando CSS, Tailwind y Styled Components. Colaboré con diseñadores para asegurar funcionalidad y coherencia en los proyectos.'
+                    title="Desarrollador Full Stack"
+                    time="Softnergy Solutions | Mayo 2023 – Julio 2024 · Octubre 2025 – Actualidad"
+                    content="Desarrollo de aplicaciones empresariales frontend y backend en proyectos de consultoría. Implementación de APIs y lógica de negocio."
+                    aditional={
+                        <p className="mt-2 text-xs lg:text-sm text-cybergreen-100">
+                            Cliente: FEMSA · Stack: React, Next.js, Spring Boot
+                        </p>
+                    }
                     isRecent={false}
                 />
                 {/*Segmento de la linea de tiempo*/}
                 <TimelineSegment
-                    title='Terminación de estudios.'
-                    time='Agosto 2018 - Junio 2024'
-                    content='Terminé la carrera de Ingeniería en Sistemas Computacionales en el Tecnológico de Toluca.'
+                    title="Ingeniería en Sistemas Computacionales"
+                    time="Instituto Tecnológico de Toluca | Agosto 2018 – Junio 2024"
+                    content="Formación en desarrollo de software, bases de datos, arquitectura de sistemas y resolución de problemas."
                     isRecent={false}
                 />
             </>}

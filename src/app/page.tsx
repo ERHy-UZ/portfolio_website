@@ -37,8 +37,8 @@ export default function Home() {
           <header className='relative mt-16 flex flex-col justify-center items-center w-full mb-14 lg:mb-20'>
             <Settings /> {/*<-- Herramientas*/}
             <h1 className='uppercase text-cybergreen-100 text-lg lg:text-2xl font-inconsolata font-bold tracking-widest'>JOSÉ ANTONIO</h1>
-            <section className='h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] opacity-60 mt-3 shadow-md shadow-cybergreen-100 relative'>
-              <Image className='absolute object-cover h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] rounded-sm pointer-events-none' src={'/mine/Photo2.jpg'} alt='Mi Persona' width={250} height={300} priority />
+            <section className='h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] opacity-70 mt-3 shadow-md shadow-cybergreen-100 relative'>
+              <Image className='absolute object-cover h-[200px] w-[150px] lg:h-[300px] lg:w-[250px] rounded-sm pointer-events-none' src={'/mine/Photo1.jpg'} alt='Mi Persona' width={250} height={300} priority />
               <div className='flex absolute h-full w-full items-end justify-center p-3'>
                 <span className='uppercase font-sf_pixelate font-bold tracking-widest text-cybergreen-100 text-xs lg:text-lg'>{`< Full-Stack >`}</span>
               </div>

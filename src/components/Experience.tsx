@@ -47,7 +47,7 @@ export default function Experience() {
                     content="Desarrollo y soporte de aplicaciones enterprise para clientes de consultoría. Trabajo en entornos productivos con despliegues controlados, CI/CD y uso de servicios en Azure."
                     aditional={
                         <p className="mt-2 text-xs lg:text-sm text-cybergreen-100">
-                            Cliente principal: AB InBev · Stack: JavaScript, Python, Azure, Data Factory
+                            Cliente principal: AB InBev · Stack: JavaScript, Python, Azure, Data Factory, Logic Apps.
                         </p>
                     }
                     isRecent={true}
@@ -60,7 +60,7 @@ export default function Experience() {
                 />
                 <TimelineSegment
                     title="Desarrollador Full Stack"
-                    time="Softnergy Solutions | Mayo 2023 – Julio 2024 · Octubre 2025 – Actualidad"
+                    time="Softnergy Solutions | Mayo 2023 – Julio 2024 · Octubre 2025 – Marzo 2026"
                     content="Desarrollo de aplicaciones empresariales frontend y backend en proyectos de consultoría. Implementación de APIs y lógica de negocio."
                     aditional={
                         <p className="mt-2 text-xs lg:text-sm text-cybergreen-100">
